@@ -23,9 +23,6 @@ def main():
         time = input("Время конца(в формате dd.mm.yy HH:MM:SS): ")
         time_end = datetime.datetime.strptime(time, '%d.%m.%y %H:%M:%S')
         try:
-
-
-
             chat = app.resolve_peer(chat_id)
             messages = app.get_chat_history(chat_id)
             flag = False
@@ -80,9 +77,5 @@ def main():
             print('Произошла ошибка при сохрании отчёта в файл', error)
 
 
-
 if __name__ == "__main__":
     main()
-
-
-
